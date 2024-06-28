@@ -1,126 +1,280 @@
 
 
 body{
-    background-color: pink;
+    font-family: sans-serif;
     padding: 0%;
     margin: 0px;
 }
 
+html{
+    padding: 0%;
+    margin: 0px;
+}
+
+#nav-bar{
+
+background-color: red;
+position: sticky;
+top: 0;
+z-index: 0;
+
+}
+
+.navbar-brand{
+    font-family: 'Lucida Grande';
+    padding: 30px;
+}
+
+.logo{
+    height: 60px;
+}
 
 .navbar{
+background-image: linear-gradient(to right, pink, white);
+padding: 0 !important;
+}
 
-background-color: white;
-display: flex;
-justify-content: space-between;
-/* width: 100%; */
-height: 80px;
-padding: 0px 20px 0px 100px;
-align-items: center;
+.navbar-nav li{
+    padding: 0 30px;
 
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0px;
-    list-style: none;
-    transition: all 0.3s ease;
+.navbar-nav li a{
+font-weight: 550;
+float: right;
+text-align: left;
+}
+
+.navbar-toggler-icon{
+    font-size: 30px;
+    color: aliceblue !important;
+}
+.navbar-toggler{
+    border: none !important;
+}
+
+  /* ------------banner section--------------- */
+
+#banner{
+    background-image: linear-gradient(to right, pink, white);
+    padding-top: 5% ;
+   
+}
+
+
+.banner-info{
+    padding-top: 15%;
+}
+
+
+.promo-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 0px;
+
+}
+
+.cs-student{
+    color: #F33A6A;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    }
+
+.bay-area{
+    font-size: 25px;
+    font-weight: 450;
+    margin-bottom: 0px;
+}
+    
+
+.banner-img{
+    height: 600px;
+    margin-bottom: 40px;
+
+}
+
+.wave-img{
+width: 100%;
+height: 300px;
+}
+
+.hire-me{
+background-color: #F33A6A !important;
+color: white;
+margin-top: 10px;
 }
 
 
 
-#click{
-    display: none;
+/* -----------About me-----------? */
+#about{
+    padding: 50px 0;
 }
 
-nav .logo{
-    font-family: "Playwrite AU VIC", cursive;
-    font-size: 33px;
-    font-weight: 30px;
-    font-style: normal;
-    font-weight: 300em;
+.title::before{
+    content: '';
+    background-color: #F33A6A;
+    height: 5px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
 
 }
 
-nav ul li{
-    padding: 0px 2%;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    list-style-type: none;
-    font-family: "Playwrite AU VIC", cursive;
-    font-weight: 300;
-    font-style: normal;
+.title::after{
+    content: '';
+    background-color: #F33A6A;
+    height: 10px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(7px);
+}
+
+
+.title{
+    font-weight: 600;
+}
+
+.title:hover{
+    color: #F33A6A;
+}
+
+.info{
+    margin-bottom: 10px;
+}
+
+
+
+/* ------------education------------ */
+
+#education{
+    padding: 50px 0;
     
 }
 
+.row.space-top{
+    padding-top: 60px !important;
+}
 
 
-nav ul li a{
+
+
+/* ------------Skills-------------- */
+#skills{
+    padding: 50px 0;
+}
+
+.skills-img{
+    width: 400px;
+    height: 300px;
+}
+
+.skills-img:hover{
+ background-image: #F33A6A;
+}
+
+
+
+/* ---------work-experience--------- */
+
+.pink-effect{
+    /* transition: background-image 0.9s ; */
+    transition: background-image 0.3s ease;
+
+    background-color: white;
+}
+
+.pink-effect:hover{
+    background-image: linear-gradient(to right, pink, white);
+  
+    /* transform: scale(1.02); */
+}
+
+#work-experience{
+    padding: 50px 0;
+    
+}
+
+.work-experience{
+    font-weight: 600;
+
+}
+.work-experience:hover{
+    color: #F33A6A;
+}
+
+.scale-up{
+    transition: transform 0.3s ease;
+}
+
+.scale-up:hover{
+    transform: scale(1.02);
+}
+
+
+
+
+
+/* ---------contact--------- */
+#contact{
+    padding: 50px 0;
+}
+
+
+.fa-instagram{
+    background-color: #F33A6A;
+}
+
+.social-icons{
+    font-size: 40px;
     color: black;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 1px;
+    padding-right: 10px;
+    /* padding-top: 0px; */
+    transition: color 0.3s ease;
+}
 
-    border-radius: 5px;
-    padding: 8px 10px;
-    transition: all 0.3s ease;
+.social-icons:hover{
+    color: #F33A6A;
+
 }
 
 
-nav ul li a:hover,
-nav ul li a.active{
-    background-color: pink;
-    color: aliceblue;
+/* ---------footer--------- */
+
+#footer .logo{
+    width: 150px;
+    margin-bottom:30px;
+}
+
+#footer{
+    margin-bottom: 50px;
 
 }
 
-.navbar .menue-boton i{
-    color: pink;
-    font-size: 30px;
-    display: none;
+#footer .social-icons{
+    font-size: 20px;
 }
 
-@media(max-width: 940px){
-
-    nav ul{
-        position: fixed;
-        top: 0px;
-        left: -100%;
-        margin-top: 80px;
-        background: white;
-        height: 100vh;
-        width: auto;
-        padding-top: 0px;
-        align-items: flex-start ;
-        display: block;
-
-
-    }
-
-    #click:checked ~ ul{
-        left: 0%;
-        
-    }
-
-    nav ul li{
-        margin: 10px 0px;
-
-    }
-
-    .navbar .menue-boton i{
-        display: block;
-
-    }
-
-
+#footer li{
+    list-style: none;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    scrollbar-width: 0px;
+.link-color{
+color: black;
+}
+.link-color:hover{
+    color: #F33A6A;
+}
+
+
+.pink-background{
+    background-image: linear-gradient(to right, pink, white);
+    padding: 30px;
+
 }
