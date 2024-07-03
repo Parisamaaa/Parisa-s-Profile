@@ -1,4 +1,8 @@
 
+::selection {
+    color: white;
+    background: 	#E37383;
+  }
 
 body{
     font-family: sans-serif;
@@ -30,7 +34,7 @@ z-index: 0;
 }
 
 .navbar{
-background-image: linear-gradient(to right, pink, white);
+background: linear-gradient(to right, pink, white);
 padding: 0 !important;
 }
 
@@ -61,7 +65,7 @@ text-align: left;
   }
 
 #banner{
-    background-image: linear-gradient(to right, pink, white);
+    background: linear-gradient(to right, pink, white);
     padding-top: 28% ;
    
 }
@@ -210,15 +214,14 @@ margin-bottom: 20px;
 
 .pink-effect{
     /* transition: background-image 0.9s ; */
-    transition: background-image 0.3s ease;
+    /* transition: background-image 0.3s ease; */
 
     background-color: white;
+    transition: background 0.3s ease;
 }
 
 .pink-effect:hover{
-    background-image: linear-gradient(to right, pink, white);
-  
-    /* transform: scale(1.02); */
+    background: linear-gradient(to right, pink, white);
 }
 
 #work-experience{
@@ -255,6 +258,17 @@ margin-bottom: 20px;
 .fa-instagram{
     background-color: #F33A6A;
 }
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #F33A6A;
+}
+
 
 .social-icons{
     font-size: 40px;
