@@ -11,8 +11,9 @@
    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2987498ae8.js" crossorigin="anonymous"></script>
     
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="JQ.js"></script>
 </head>
   <body>
 
@@ -52,6 +53,8 @@
 
 
 <!-- ---------banner-------- -->
+
+
 <section id="banner">
 <div class="container">
     <div class="row">
@@ -64,7 +67,7 @@
             
         </div>
         <div class="col-md-6 text-center">
-            <img class="img-fluid banner-img rounded float-start scale-up" src="parisa.JPG" alt="Parisa's profile">
+            <img id="parisa-img" class="img-fluid banner-img rounded float-start scale-up" src="parisa.JPG" alt="Parisa's profile">
         </div>
         
         <div class="scroll-up fixed-bottom d-flex justify-content-end"> <a class="link-underline link-underline-opacity-0 link-opacity-100-hover link-color" href="index.html#navbar"> <i class="fa fa-arrow-up" aria-hidden="true"></i> Scroll Up</a></div>
@@ -75,8 +78,6 @@
 
 </section>
 
-
-<button></button>
 
 
 <!---------------- about------------------------ -->
@@ -92,6 +93,7 @@
        
     </div>
 </section>
+
 
 
 <!---------------- education ------------------------ -->
@@ -247,7 +249,7 @@
         <h5 ><a href="mailto:parisamaaa@gmail.com"> parisamaaa@gmail.com</a></h5>
         <div>
             <a href=""><i class="fa fa-github social-icons scale-up" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin social-icons scale-up" aria-hidden="true"></i></a>
+            <a href="www.linkedin.com/in/parisarohanian"> <i class="fa fa-linkedin social-icons scale-up" aria-hidden="true"></i></a>
             <a href="mailto:parisamaaa@gmail.com"><i class="fa fa-envelope social-icons"></i></a>
         </div>
      
@@ -266,11 +268,11 @@
            
             <div class="col-md-4">
                 
-                <p> <i class="fa fa-envelope social-icons scale-up" aria-hidden="true"></i> parisamaaa@gmail.com</p>
-                <p><i class="fa fa-phone-square social-icons scale-up" aria-hidden="true"></i>
+                <p> <a href="mailto:parisamaaa@gmail.com"><i class="fa fa-envelope social-icons scale-up" aria-hidden="true"></i> </a> parisamaaa@gmail.com</p>
+                <p><a href="tel:6504451284"><i class="fa fa-phone-square social-icons scale-up" aria-hidden="true"></a></i>
                     (650)445-1284</p>
                 <a href=""><i class="fa fa-github social-icons scale-up" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin social-icons scale-up" aria-hidden="true"></i></a>
+                <a href="www.linkedin.com/in/parisarohanian"><i class="fa fa-linkedin social-icons scale-up" aria-hidden="true"></i></a>
             </div>
           
                 <li class="col-auto" > <a class="link-underline link-underline-opacity-0 link-opacity-100-hover link-color" href="index.html#navbar">Home</a></li>
@@ -284,8 +286,13 @@
 </section>
 
 
+<script>
+    const offset = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    console.log("This is ",offset);    
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
   </body>
 </html>
 
